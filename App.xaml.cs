@@ -9,7 +9,10 @@
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new Views.vContactos());
+            var mainPage = new NavigationPage(new Views.vContactos());
+
+            return new Window(mainPage);
+
         }
     }
 }

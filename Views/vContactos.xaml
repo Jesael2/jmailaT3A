@@ -6,12 +6,16 @@
     <VerticalStackLayout
         Padding="20"
         Spacing="20">
+        <Image Source="https://c0.klipartz.com/pngpicture/81/570/gratis-png-perfil-logo-iconos-de-computadora-usuario-usuario-thumbnail.png"
+       HorizontalOptions="StartAndExpand"
+       WidthRequest="50"
+       HeightRequest="50"/>
 
         <Label 
     Text="TALLER SEMANA 3 - CONTACTOS UI"
     FontSize="20"
     TextColor="Blue"
-    VerticalOptions="Center" 
+    VerticalOptions="Start" 
     HorizontalOptions="Center" />
 
         <Picker x:Name="pkIdentificacion" Title="Identificación" SelectedIndexChanged="pkIdentificacion_SelectedIndexChanged"   >
@@ -21,6 +25,7 @@
                 <x:String>PASAPORTE</x:String>
             </Picker.Items>
         </Picker>
+
 
         <Entry x:Name="txtpicker" 
         Placeholder="Selecciona Identificación" />
