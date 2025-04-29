@@ -3,14 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jmailaT3A.Views.vDetalle"
              Title="vDetalle">
+    <ContentPage.Resources>
+        <Style x:Key="estiloGris" TargetType="Label">
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="TextColor" Value="Grey"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="estiloAmarillo" TargetType="Label">
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="TextColor" Value="Yellow"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+
+    </ContentPage.Resources>
     <VerticalStackLayout
         Padding="18"
         Spacing="18">
         <Label 
+            Style="{StaticResource estiloGris}"
             Text="Detalle de contacto"
             FontSize="20"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Image Source="https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png"
+               WidthRequest="200"/>
 
         <Label x:Name="lblIdentificacion" />
         <Label x:Name="lblNombre" />

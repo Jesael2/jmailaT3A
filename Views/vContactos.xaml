@@ -3,6 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jmailaT3A.Views.vContactos"
              Title="vContactos">
+
+    <ContentPage.Resources>
+            <Style  TargetType="Entry">
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="HorizontalTextAlignment" Value="Start"/>
+            <Setter Property="BackgroundColor" Value="Grey"/>
+        </Style>
+    </ContentPage.Resources>
+
     <VerticalStackLayout
         Padding="20"
         Spacing="20">
@@ -12,11 +22,11 @@
        HeightRequest="50"/>
 
         <Label 
-    Text="TALLER SEMANA 3 - CONTACTOS UI"
-    FontSize="20"
-    TextColor="Blue"
-    VerticalOptions="Start" 
-    HorizontalOptions="Center" />
+            
+            Text="TALLER SEMANA 3 - CONTACTOS UI"
+            FontSize="20"
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" />
 
         <Picker x:Name="pkIdentificacion" Title="Identificación" SelectedIndexChanged="pkIdentificacion_SelectedIndexChanged"   >
             <Picker.Items>
